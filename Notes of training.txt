@@ -1,0 +1,98 @@
+Java programming 
+-OOPS
+-Platform independent -WORA
+ WORA-Write once Run Anywhere
+-Open Source 
+-development/testing/security/Networking 
+-JDK - Java development KIt 
+-JRE - Java Runtime Enviorment
+-Wrapper (Class)
+-Every program of java starts with a Class
+- class name cannot be staeted with a number or any other special char except _ or $
+- class name must be same as file name
+
+JDK - JAVA development kit 
+- it provides javadoc
+- it provides java compiler
+- it also provides jar/war/ear/rar
+JRE - Java Runtime Enviorment
+- JRE is divided into 2 parts
+-- JVM - Java virtual machine (Interpreter Executes line by line code of byte code)
+    actually JVM is responsible to convert byte code to machine code
+-- Libraries
+
+
+
+######### Training Class - 2 #########
+
+## Hello World Progrsam 
+-Keywords
+-- Class 
+-- Public
+-- Static
+-- Void
+-- main
+-- String
+
+
+
+# System class
+--.in (Obj of InputStream Defined under System Class) 
+--.out(Obj of PrintStream Defined under System Class) 
+--.err(Obj of PrintStream Defined under System Class)
+ 
+# Type Casting
+-- Integer.parseInt() [Used for converting String to Integer number]
+-- Float.parsefloat() [Used for converting String to Float number]
+-- Double.parsedouble() [Used for converting String to double number]
+
+
+
+############################ Class3 / Class4 ###############################################
+Date:- 28/09/2022
+Edited :- 30/09/2022
+# Data Type
+--Primitive  (int Byte long short float double char  bool)
+-----Primitive means primary
+-----Value type (Because it store value only)
+-----Simple type (Only contain same typr of data)
+-----Inspired from C , C++
+-----Immutable(Does not change in the original value if we channge in Copied)
+-----Static Memory Allocation
+--Non Primitive (Array String Class&Obj Integer Long Float Double Byte Short)
+-----Reference type( Keep Address/Reference)(Address could be of 4 byte (32bit) or 8 byte(64 bit))
+-----Complex type (Contain many type of data like a bag)
+-----Dynamic Memory Allocation
+--Keywords
+-----Keywords are reserve words,Compiler knows these so it know how much memory is to allocate for primitive, this is get decided on compile time.
+-----Start with small letter 
+
+--Heap (Storage space Made by java to store all object)
+-----Stronng pool(Inside Heap there is a special area where java store string called Stronng pool)
+
+--String 
+-----(String is a collection of caharacter )
+-----String is a predefined Java Class
+-----String also behave like data type
+-----String obj can be created in 2 ways
+-----a)Literal way(1 or 0 way)
+-----b)new object way (2 or 1 obj)
+-----String store in String pool
+-----String is a final class in Java (No one can inherit)
+-----String obj are Immutable
+-----intern()
+        when you weite String a = "Amit" -> Internally it is converted into
+        String a = "Amit".intern()
+        intern is a method in a string, this method is used to check the string exist in a pool or not. It gives the reference of a string in a pool
+
+
+How to build a muttable string and how it did that? (H/W)
+What is the diff between string builder and string buffer? (H/W)
+--H/W:
+    input : aMIt sRiVaStaVA
+    Output: Amit Srivastava 
+    Hint : Use String Method
+
+    Q2:
+        input: ram@yahoo.com
+        Output: true,False
