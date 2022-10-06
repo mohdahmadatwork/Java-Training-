@@ -86,8 +86,11 @@ Edited :- 30/09/2022
         intern is a method in a string, this method is used to check the string exist in a pool or not. It gives the reference of a string in a pool
 
 
-How to build a muttable string and how it did that? (H/W)
-What is the diff between string builder and string buffer? (H/W)
+Q. How to build a muttable string and how it did that? (H/W)
+Sol :- We can Use Class StringBuilder or StringBuffer to create mutable String.
+
+Q.What is the diff between string builder and string buffer? (H/W)
+Sol:- String
 --H/W:
     input : aMIt sRiVaStaVA
     Output: Amit Srivastava 
