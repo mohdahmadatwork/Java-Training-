@@ -88,14 +88,20 @@ Edited :- 30/09/2022
 
 Q. How to build a muttable string and how it did that? (H/W)
 Sol :- We can Use Class StringBuilder or StringBuffer to create mutable String.
+        StringBuilder Creates a seq of char (Known as Array of char)
+
 
 Q.What is the diff between string builder and string buffer? (H/W)
-Sol:- String
+Sol:- --String Builder is Faster then StringBuffer
+      --StringBilder is not synchronized where StringBuffer is Synchronized 
+
 --H/W:
     input : aMIt sRiVaStaVA
     Output: Amit Srivastava 
     Hint : Use String Method
+    There is only two methods are available about String Case 1 is toLower 2 is toUpper So we can not perform the question only through method
 
     Q2:
         input: ram@yahoo.com
         Output: true,False
+        Ask:- If @ comes more than one time or the domain is something else  other than .com will the email valid
