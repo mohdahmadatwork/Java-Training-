@@ -1,3 +1,11 @@
+Industry Expectation :-
+--Topics :- OOPS + OOAD +SOLID + DRY + GOD + Exception handling + File IO + Networking + DB + Threads + GUI
+--Outcome : One project
+--DSA (400 + Self solved problem)
+--DBMS
+--Networking
+--OS
+
 Java programming 
 -OOPS
 -Platform independent -WORA
@@ -89,6 +97,7 @@ Edited :- 30/09/2022
 Q. How to build a muttable string and how it did that? (H/W)
 Sol :- We can Use Class StringBuilder or StringBuffer to create mutable String.
         StringBuilder Creates a seq of char (Known as Array of char)
+        3 Constructor are available 
 
 
 Q.What is the diff between string builder and string buffer? (H/W)
@@ -105,3 +114,27 @@ Sol:- --String Builder is Faster then StringBuffer
         input: ram@yahoo.com
         Output: true,False
         Ask:- If @ comes more than one time or the domain is something else  other than .com will the email valid
+
+###### Class 5 (7/10/2022)###############
+String Buffer 
+--Default Cacpacity 16 
+--(Intial length of string + 16 is the initial capacity if string is initialized)
+--When capacity < length
+--New Capacity = OLD capacity * 2 + 2 (First 2 is because of char is of 2 byte and second 2 is because of null char )
+--if again capacity < length then Newest capacity = length
+--All metehods of StringBuffer is Synchronized (In every case Synchronization is not good)
+
+
+Problem Statement 
+--Iterative Problem
+--Recursive problem
+
+
+-##### HW
+---Problem :- Lucky Number Problem
+------Statement :- Sum of all even places digit modulus division by 9 gives 0 then the number is Lucky
+---Problem :- Reverse Number
+---Problem :- Rotate a Number
+------Statement :- +ve left to right , -ve right to left
+---Problem :- Prime Number ( 4 logic are available do all , Hint:- Think about square root) 
+---Problem :- ArmStrong Number (Sum of power of number of digit of every digit is equal to the original number )

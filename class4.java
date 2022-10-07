@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class class4 {
     public static void main(String[] args) {
-        String name = "Amit";
+        // String name = "Amit";
         // name is a reference variable
-        String name2 = name; //Ref copy
+        // String name2 = name; //Ref copy
         // int x=20;
         // int y = x;//value copy
         // y++;//Change in copy
