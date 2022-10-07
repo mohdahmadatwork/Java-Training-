@@ -59,7 +59,7 @@ public static int countDigit(int num) {
         //Step 3 - Print the digits from start of Number
         while(copy>0){
             System.out.println(copy/divisor);
-            num=num%divisor;
+            copy=copy%divisor;
             divisor=divisor/10;
         }
     }
