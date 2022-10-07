@@ -1,7 +1,6 @@
 /**
  * Date:- 07/10/2020
  */
-import java.math.*;
 public class class5 {
     public static void main(String[] args) {
         // StringBuffer is a legacy
