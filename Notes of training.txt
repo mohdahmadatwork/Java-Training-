@@ -138,3 +138,25 @@ Problem Statement
 ------Statement :- +ve left to right , -ve right to left
 ---Problem :- Prime Number ( 4 logic are available do all , Hint:- Think about square root) 
 ---Problem :- ArmStrong Number (Sum of power of number of digit of every digit is equal to the original number )
+
+
+
+######### Class 6 (12/10/2022) #############
+-- InputStream (Class for taking input)
+----- Input can come from Keyboard , Network , File
+--Scanner
+-----(predefined Class for taking input) 
+-----Scanner is a Buffer
+-----Methods of Scanner (nextint(),nextLine(),nextbyte(),etc)
+-----nextLine take input until it didn't get '\n' 
+
+--Buffer
+-----(chunk () of Data)
+-----() 
+--Stream 
+-----(Flow of Data)
+-----(Example Live Streaming)
+****{EXAMPLE Filling water in cooler There are two ways to fill first is use pipe and second is Use Balti.
+ the pipe is an example of stream and balti is the example of buffer;}********
+  IF ELSE 
+  -----

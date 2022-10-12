@@ -100,7 +100,7 @@ class HomeworkOfClass5 {
         }
     }
     public static void armStrongNumber() {
-        int num=153;
+        int num=54748;
         int copy =num;
         int cop2 =copy;
         int count=Problem.countDigit(num);
