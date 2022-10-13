@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 public class Yogesh {
     public static void main(String[] args) {
@@ -22,6 +21,7 @@ public class Yogesh {
         // for(int i=0;i<arr.length;i++){
         //     System.out.print(arr[i]+" ");
         // }
+        
         int sum =0;
         for(int i=0;i<(arr.length/2)+1;i++){
             sum = arr[i];
@@ -104,6 +104,7 @@ public class Yogesh {
                 sum =temp4;
             }
             sum =0;
-        }  
+        } 
+        sc.close(); 
     }
 }
