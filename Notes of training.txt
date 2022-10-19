@@ -263,3 +263,17 @@ Problem Statement
         *   *
         *****
 }
+
+################## Class 8 (19/10/2022) ########################
+--Prime Number
+---- 4 method learnt (1. check from 2 to n-1 , 2. Check from 2 to n/2 , 3. Check from 2 to sqrt of (n))
+------- 4. Prime Seive Method (First check with 2 & 3 then with in a loop of 5 to sqrt of n on the step of 6 and check with i and i+2 of loop)
+----Count Digit of a number
+----Count Digit of Zeroes of a number
+----Reverse of a number
+----Find GCD and LCM 
+
+--HW
+-----Armstrong Number
+-----Palindrome Number
+-----Questions on loop on the website codeforwin (https://codeforwin.org/2015/06/for-do-while-loop-programming-exercises.html)
