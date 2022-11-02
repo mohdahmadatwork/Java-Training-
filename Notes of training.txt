@@ -277,3 +277,29 @@ Problem Statement
 -----Armstrong Number
 -----Palindrome Number
 -----Questions on loop on the website codeforwin (https://codeforwin.org/2015/06/for-do-while-loop-programming-exercises.html)
+
+#################### Class 9 (02/11/2022) ##################
+--Recursion
+--- Process calling itself
+--- Breaking of large problem into smaller instances and solving it
+--- 3 pre-requisite {
+        - call stack
+        - Local memory initialization 
+        - Return Statement Working 
+        }
+--- Types of recursion {
+        - Head Recursion (recursive call then processing logic )
+        - tail recursion (processing logic then recursive call)
+        - linear recursion (processing logic then recursive call then logic)
+}
+--- Recursion program contains{
+        - Base case
+        - Small Problem
+        - Processing logic
+}
+--- Fall back
+
+##### HW ####
+-- Power of a number
+-- Count zero in a digit
+-- sum of a digit

@@ -1,5 +1,8 @@
 import java.util.Scanner;
 public class Yogesh {
+    public static void recursiveMethod(int [] array, int numOfElementOfArray) {
+        
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter how many number do you want to enter:");
