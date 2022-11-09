@@ -329,3 +329,27 @@ Problem Statement
         4 5 6
         7 8 9 10
 }
+#################### Class 11 (09/11/2022) ##################
+--Interview 
+----- Whiteboard Round {
+        Q.   *
+            * *
+           * * *
+        Q.Print Armstrong Number till given number using Recursion 
+        Q.Print Prime Number till given number using Recursion 
+}
+##### HW #####
+-- Pattern 1 {
+        a
+        ab
+        abc
+        abcd
+        abcde
+}
+-- Pattern 2 {
+        A 
+        BC 
+        DEF 
+        GHIJ
+        KLMNO
+}
