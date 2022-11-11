@@ -353,3 +353,9 @@ Problem Statement
         GHIJ
         KLMNO
 }
+#################### Class 12 (11/11/2022) ##################
+--Find the frequency of Every charecter of String {
+        -- Make an array of 256 because of keyboard have 256 character so initially it has 0 in every index then we can increase while traversing (This approach is called Hashing )
+        -- Traverse the array keep the first character again traverse the Whole array and count that character (Time complexity is n2)
+}
+--Print all the index of given element in given array
