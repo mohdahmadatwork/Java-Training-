@@ -12,6 +12,22 @@ public class Class13 {
         else{
             System.out.println("False");
         }
+        if(homeworkOfClass13.check_power_3(27)){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+        if(homeworkOfClass13.check_power_4(64)){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+        if(homeworkOfClass13.check_power_n(64,4)){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+
     }
     // --Problem 1:- Replace pi value with 3.14{
     //     i/p:- "3+pi*1-5*pi+6"
@@ -82,4 +98,37 @@ public class Class13 {
         }
         return false;
     }
+}
+class homeworkOfClass13{
+    public static boolean check_power_3(int number) {
+        if (number==1) {
+            return true;
+        }
+        if (number%3==0) {
+            return check_power_3(number/3);
+        }
+        return false;
+    }
+    public static boolean check_power_4(int number) {
+        if (number==1) {
+            return true;
+        }
+        if (number%4==0) {
+            return check_power_4(number/4);
+        }
+        return false;
+    }
+    public static boolean check_power_n(int number,int n) {
+        if(n==0){
+            return false;
+        }
+        if (number==1) {
+            return true;
+        }
+        if (number%n==0) {
+            return check_power_n(number/n,n);
+        }
+        return false;
+    }
+    
 }
