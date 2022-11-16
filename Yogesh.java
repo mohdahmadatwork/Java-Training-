@@ -113,7 +113,7 @@ public class Yogesh {
             return;
         }
         if (element==sum) {
-            System.out.println(reqArr);
+            System.out.println(reqArr+" ");
             return;
         }
         if (index>=arr.length) {

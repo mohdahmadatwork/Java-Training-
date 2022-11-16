@@ -359,3 +359,22 @@ Problem Statement
         -- Traverse the array keep the first character again traverse the Whole array and count that character (Time complexity is n2)
 }
 --Print all the index of given element in given array
+
+#################### Class 13 (16/11/2022) ##################
+(We did questions in time limit)
+--Problem 1:- Replace pi value with 3.14{
+        i/p:- "3+pi*1-5*pi+6"
+        o/p:- "3+3.14*1-5*3.14+6"
+}
+--Problem 2 :- Adjacent starts{
+        i/p :- abbaaba
+        o/p :- ab*ba*aba
+}
+--Problem 2 :- Check if a number is of power of 2 or not{
+        i/p :- 16
+        o/p :- True
+}
+##### HW #####
+--Q. Power of 3
+--Q. Power of 4
+--Q. Power of N
