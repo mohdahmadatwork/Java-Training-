@@ -378,3 +378,25 @@ Problem Statement
 --Q. Power of 3
 --Q. Power of 4
 --Q. Power of N
+
+#################### Class 14 (18/11/2022) ##################
+--ToDo For The week {
+        -- Do all the questions by recursion with and without return  
+        Q. Solve recursive functions of all the questions did in loop in two ways function with return and func with no return
+        Q. Array Search and get all the Search Occurrence
+        Q. Array is sorted or not
+        Q. Array search and replace all the Occurrence
+        Q. Array all the elements sum Return / Print
+        Q. Array all Elements Cube (Each Element) Return/Print
+        Q. String Reverse
+        Q. String Palindrome
+        Q. String Title Case
+        Q. String Search
+        Q. String Replace
+}
+--Branch Recursion{
+        -- Permutation Question will be solved by Branch recursion
+        Q. Sub Sequence of a String
+        ##### HW #####
+        Q. All permutation of given String
+}
