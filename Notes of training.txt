@@ -400,3 +400,33 @@ Problem Statement
         ##### HW #####
         Q. All permutation of given String
 }
+#################### Class 15 (23/11/2022) ##################
+--Problem 1{
+        name:- Board Dice Problem
+        Statement:- A board is given of nxm , a dice is given. find all the possible combination of dice for reaching the destination ?
+}
+--Problem 2{
+        name:-PLayer In Maze 
+        Statement:- A board is given of nxm , from (0,0) to target(n,m), player can go right or down
+}
+##### HW #####
+--Problem 3{
+        name:- SubSeq 
+        Statement:- find All sub Sequence
+        Signature{
+                function:- static void subSeq(String str,String result)
+                call in main:- subSeq("amit","")
+        } 
+}
+--Problem 4{
+        name:- Permutation Of String 
+        Statement:- find All Permutation ofString
+        Signature{
+                function:- static void perm(String str,String result)
+                call in main:- perm("amit","")
+        }
+}
+--LeetCode problem {
+        Q. 70
+        Q. 509
+}
