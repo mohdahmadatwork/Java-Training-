@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Class14 {
     public static void main(String[] args) {
-        fun(3);
-        subSeq("amit", 0, "");
-        System.out.println(subSeq("amit"));
-        HomeworkOfClass14.permutation("abc", "");
-        System.out.println(HomeworkOfClass14.subSeq("abc"));
+        // fun(3);
+        // subSeq("amit", 0, "");
+        // System.out.println(subSeq("amit"));
+        // HomeworkOfClass14.permutation("abc", "");
+        System.out.println(HomeworkOfClass14.perm("abc"));
     }
     public static void fun(int num) {
         if(num<=0){
@@ -56,7 +56,7 @@ class HomeworkOfClass14{
             permutation(newStr, reqStr+curr);
         }
     }
-    public static ArrayList<String> subSeq(String Str) {
+    public static ArrayList<String> perm(String Str) {
         if(Str.length()==0){
             ArrayList<String> newStr = new ArrayList<>();
             newStr.add("");
@@ -64,14 +64,15 @@ class HomeworkOfClass14{
         }
         char singleChar = Str.charAt(0);
         String subString = Str.substring(1);
-        ArrayList<String> newStr = subSeq(subString);
+        ArrayList<String> newStr = perm(subString);
         ArrayList<String> reqStr = new ArrayList<>();
         for (int i = 0; i < newStr.size(); i++) {
-            reqStr.add(singleChar+newStr.get(i));
-            reqStr.add(newStr.get(i)+singleChar);
+            int len = newStr.get(i).length();
+            for (int j = 0; j <=len; j++) {
+                reqStr.add(newStr.get(i).substring(0,j)+singleChar+newStr.get(i).substring(j));
+            }
+
         }
         return reqStr;
-
-        
     }
 }

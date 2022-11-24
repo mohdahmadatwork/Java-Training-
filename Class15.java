@@ -58,3 +58,56 @@ public class Class15 {
         return finalResult;
     }
 }
+class HomeworkOfClass15{
+    // Question :- Find the ways of climbing a stair of n step where person can take 1 or 2 step at a time
+    public static int leetcode70(int n) {
+        // Recursive Solution
+        // if(n==2||n==3){
+        //     return n;
+        // }
+        // if(n==0){
+        //     return 1;
+        // }
+        // if(n<0){
+        //     return 0;
+        // }
+        // return climbStairs(n-1)+climbStairs(n-2);
+        // iterative Solution Accepted by leet code
+        int x = 1,m=1;
+        for(int i=2;i<=n;i++){
+            int temp = x;
+            x +=m;
+            m=temp;
+        }
+        return x;
+    }
+    // Question:- Find nth Fibonacci number 
+    public static int leetcode509(int n) {
+        if(n==0||n==1){
+            return n;
+        }
+        if(n<0){
+            return 0;
+        }
+        return leetcode509(n-1)+leetcode509(n-2);
+    }
+    public static void subSeq(String str,int index,String newStr) {
+        if(index==str.length()){
+            System.out.println(newStr);
+            return;
+        }
+        subSeq(str, index+1, newStr);  
+        subSeq(str, index+1, newStr+str.charAt(index));  
+    }
+    public static void permutation(String str,String reqStr) {
+        if (str.length()==0) {
+            System.out.println(reqStr);
+            return;
+        }
+        for (int i = 0; i < str.length(); i++) {
+            char curr = str.charAt(i);
+            String newStr = str.substring(0, i)+str.substring(i+1);
+            permutation(newStr, reqStr+curr);
+        }
+    }
+}
