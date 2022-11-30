@@ -63,3 +63,58 @@ public class Class17 {
     }
 
 }
+class HomeworkOfClass17{
+    public void solveSudoku(char[][] board) {
+        solveSudoku(0,0,board);
+    }
+    public static boolean solveSudoku(int row,int col,char[][] board) {
+        // if call reach to 9
+        if (col==board.length) {
+            row=row+1;
+            col=0;
+        }
+        // row reach end
+        if (row==board.length) {
+            return true;
+        }
+        // Check cell is not empty then go to next cell 
+        if(board[row][col]!='.'){
+            return solveSudoku(row, col+1,board);
+        }
+        // check if cell is empty
+        for (int digit = 49; digit <= 57; digit++) {
+            if (isSafe(digit,row,col,board)) {
+                board[row][col]=(char)(digit);
+                if(solveSudoku(row, col+1,board)){
+                    return true;
+                }
+                board[row][col]='.';
+            }
+        }
+        return false;
+    }
+    public static boolean isSafe(int digit,int row,int col,char[][] board) {
+        // Checking Col
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][col]==(char)(digit)) {
+                return false;
+            }
+        }
+        // Checking Row
+        for (int i = 0; i < board.length; i++) {
+            if (board[row][i]==(char)(digit)) {
+                return false;
+            }
+        }
+        // Checking sub Grid
+        int startRow = row-row%3;
+        int startCol = col-col%3;
+        for (int i = startRow; i < startRow+3; i++) {
+            for (int j = startCol; j < startCol+3; j++) {
+                if(board[i][j]==(char)(digit))
+                return false;
+            }
+        }
+        return true;
+    }
+}
