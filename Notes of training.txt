@@ -430,3 +430,14 @@ Problem Statement
         Q. 70
         Q. 509
 }
+
+#################### Class 17 (30/11/2022) ##################
+--Sudoku Solver (submit on leetcode Q.37){
+        solution:- {
+                1. If col is not empty then go to next cell
+                2. If col is empty then try to put from 1 to 9 for this check that value should be unique in row,col and sub grid
+                3. 
+        }
+}
+##### HW #####
+--Letter Combination of a phone Number (LeetCode Q.17)
