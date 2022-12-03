@@ -13,7 +13,7 @@ public class Class17 {
     }
     public static boolean solveSudoku(int row,int col) {
         // if call reach to 9
-        if (col==9) {
+        if (col==board.length) {
             row=row+1;
             col=0;
         }

@@ -76,7 +76,7 @@ Edited :- 30/09/2022
 -----Start with small letter 
 
 --Heap (Storage space Made by java to store all object)
------Stronng pool(Inside Heap there is a special area where java store string called Stronng pool)
+-----String pool(Inside Heap there is a special area where java store string called Stronng pool)
 
 --String 
 -----(String is a collection of caharacter )
@@ -89,7 +89,7 @@ Edited :- 30/09/2022
 -----String is a final class in Java (No one can inherit)
 -----String obj are Immutable
 -----intern()
-        when you weite String a = "Amit" -> Internally it is converted into
+        when you write String a = "Amit" -> Internally it is converted into
         String a = "Amit".intern()
         intern is a method in a string, this method is used to check the string exist in a pool or not. It gives the reference of a string in a pool
 
