@@ -1,7 +1,11 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
 public class Class17 {
     static int [][] board = {{5,3,0,0,7,0,0,0,0},{6,0,0,1,9,5,0,0,0},{0,9,8,0,0,0,0,6,0},{8,0,0,0,6,0,0,0,3},{4,0,0,8,0,3,0,0,1},{7,0,0,0,2,0,0,0,6},{0,6,0,0,0,0,2,8,0},{0,0,0,4,1,9,0,0,5},{0,0,0,0,8,0,0,7,9}};
     public static void main(String[] args) {
         printBoard();
+        System.out.println(HomeworkOfClass17.letterCombinations("23"));
     }
     public static void printBoard() {
         for (int i = 0; i < board.length; i++) {
@@ -117,4 +121,48 @@ class HomeworkOfClass17{
         }
         return true;
     }
+    
+
+    // Leet Code Q.17
+    // Letter Combination of mobile phone
+    public static List<String> letterCombinations(String digits) {
+        map.put(2,"abc");
+        map.put(3,"def");
+        map.put(4,"gfi");
+        map.put(5,"jkl");
+        map.put(6,"mno");
+        map.put(7,"pqrs");
+        map.put(8,"tuv");
+        map.put(9,"wxyz");
+        return implement(digits);
+    }
+    static HashMap<Integer,String> map = new HashMap<>();
+    public static ArrayList<String> implement(String digits){
+        ArrayList<String> reqlist = new ArrayList<>();
+        if(digits.length()==0){
+            ArrayList<String> list = new ArrayList<>();
+            list.add("");
+            return list;
+        }
+        int index = Integer.parseInt(digits.substring(0,1));
+        ArrayList<String> reqlist1=implement(digits.substring(1));
+        // System.out.println(reqlist1);
+        ArrayList<String> reqlist2=implement1(map.get(index));
+        // System.out.println(reqlist2);
+        for(int k=0;k<reqlist2.size();k++){
+            for(int j=0;j<reqlist1.size();j++){
+                reqlist.add(reqlist2.get(k)+reqlist1.get(j));
+            }
+        }
+        // System.out.println(reqlist);
+        return reqlist;
+    }
+    public static ArrayList<String> implement1(String str){
+        ArrayList<String> reqlist = new ArrayList<>();
+        for(int i=0;i<str.length();i++){
+            reqlist.add(str.substring(i,i+1));
+        }
+        return reqlist;
+    }
+
 }
