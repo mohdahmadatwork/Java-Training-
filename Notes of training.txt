@@ -441,3 +441,13 @@ Problem Statement
 }
 ##### HW #####
 --Letter Combination of a phone Number (LeetCode Q.17)
+
+#################### Class 18 (05/12/2022) ##################
+--Well Formed Parantheses {
+        Company:- Microsoft, Apple, Nvidia, TCS
+        LeetCode :- Q.22
+        Statement:- Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+}
+--Word Search{
+        Statement:- A 2D char board is given filled with char . Given a word we have to find if the word is given. We can go from right,left,down,up.
+}
