@@ -48,11 +48,16 @@ class WordSearch{
             {0,-1},//left
             {-1,0}//top
         };
+        board [row][col]='#';
         for (int direction = 0; direction < directions.length; direction++) {
             int rowDirection = directions[direction][0];
             int colDirection = directions[direction][1];
-            isPresent(row+rowDirection, col+colDirection, word.substring(1));
+            isValid=isPresent(row+rowDirection, col+colDirection, word.substring(1));
+            if(isValid){
+            break;
+            }
         }
+        board [row][col]=word.charAt(0);
         return isValid;
     }
 }
