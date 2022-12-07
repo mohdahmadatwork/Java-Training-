@@ -11,7 +11,7 @@ public class Class18 {
 class WellFormParentheses{
     public static List<String> generate(int n) {
         List<String> output = new ArrayList<>();
-        helper(output,"",0,0,n*2);
+        helper(output,"",0,0,n);
         return output;
     }
     public static void helper(List<String> ans,String currentBracket,int open,int close,int max) {
@@ -22,7 +22,7 @@ class WellFormParentheses{
         if (open<max) {
             helper(ans, currentBracket+"(", open+1, close, max);
         }
-        if (close<max) {
+        if (close<open) {
             helper(ans, currentBracket+")", open, close+1, max);
         }
     }

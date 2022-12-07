@@ -451,3 +451,13 @@ Problem Statement
 --Word Search{
         Statement:- A 2D char board is given filled with char . Given a word we have to find if the word is given. We can go from right,left,down,up.
 }
+#################### Class 19 (07/12/2022) ##################
+--Rat in a maze
+##### HW #####
+--Permutation On Array{
+        i/p:- [1,2,3]
+        o/p:-[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+}
+--Combination Sum{
+        LeetCode :- Q39
+}
