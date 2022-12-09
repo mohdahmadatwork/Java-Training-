@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Class19 {
     public static void main(String[] args) {
@@ -64,7 +65,7 @@ public static void backTrackSol(int arr[],int element,int index,String reqArr,in
             // System.out.println();
             for(int i=0;i<newreqArr.length;i++){
                 int index1=Integer.parseInt(newreqArr[i], 10);
-                newArr.add(arr[index1]);
+                newArr.add(index1);
             }
             output.add(newArr);
             return;
@@ -72,10 +73,11 @@ public static void backTrackSol(int arr[],int element,int index,String reqArr,in
         if (index>=arr.length) {
             return;
         }
-        backTrackSol(arr, element, index, reqArr+index+" ", sum+arr[index]);
+        backTrackSol(arr, element, index, reqArr+arr[index]+" ", sum+arr[index]);
         //backTrackSol(arr,element,index+1,reqArr+index,sum+arr[index]);
         //backTrackSol(arr, element,index,reqArr,sum);
        backTrackSol(arr, element, index+1, reqArr, sum);
     }
+    // Permutation In Array
 }
 

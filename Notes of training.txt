@@ -461,3 +461,6 @@ Problem Statement
 --Combination Sum{
         LeetCode :- Q39
 }
+#################### Class 20 (09/12/2022) ##################
+-- JosephursProblem
+-- KnapsackProblem
