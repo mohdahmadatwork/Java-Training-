@@ -464,3 +464,40 @@ Problem Statement
 #################### Class 20 (09/12/2022) ##################
 -- JosephursProblem
 -- KnapsackProblem
+#################### Class 21 (15/02/2023) ##################
+--Time and Space complexity
+  {
+      - Linear Growth  (When graph of complexity is linear)
+      - Constant (Graph will be horizontal line)
+      - Quadratic (When complexity is in n square)
+  }
+
+--Asymptotic Analysis
+  {
+        1. Ignore Lower order terms
+        2. Ignore Leading term constant
+  }
+
+--Asymptotic Notation 
+  {
+        -Best Case (Constant Time) (Omega)
+        -Average Case (Linear Based on condition) (Theta)
+        -Worst Case (Linear) (Big O)
+  }
+
+--Order Of Growth Measurement 
+  {
+        c< log log n < log n < n^1/3 < n^1/2 < n < n^2 < n^3 < n^4 < 2^n < n^n
+  }
+
+--Arrays
+  {
+        DS on array :- Arrays , stack , Queue , Linked List , Graph , Tree
+        Characteristics :- {
+                -Collection of similar data Types
+                -Contiguous memory Allocation
+                -Random Access
+                -Cache Friendly
+        }  
+        Syntax :- int [] array_name = new int [];
+  }
