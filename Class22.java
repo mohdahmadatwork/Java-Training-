@@ -52,7 +52,11 @@ public class Class22 {
     }
     // Update
     void Update(int index,int item){
-
+        if(index<0 || index>currentSize){
+            System.out.println("index is not present to update");
+            return;
+        }
+        arr[index]=item;
     }
     void print(){
         for (int i = 0; i < arr.length; i++) {
@@ -74,6 +78,11 @@ public class Class22 {
         obj.print();
         int arr2[] = {2,0,1,3,5,6,7};
         problem4.printBarChart(arr2, 7);
+        obj.Search(5);
+        obj.Update(4, 5);
+        // obj.print();
+        HomeworkOfClass22.spanArray(arr2, 7);
+        HomeworkOfClass22.secondMax_approach1(arr2, 7);
     }
     
 }
@@ -131,4 +140,32 @@ class problem4{
         }
     }
     
+}
+class HomeworkOfClass22{
+    public static void spanArray(int []arr,int currentSize) {
+        int max=arr[0],min=arr[0];
+        for (int i = 0; i < currentSize; i++) {
+            if(arr[i]>max){
+                max=arr[i];
+            }
+            if(arr[i]<min){
+                min=arr[i];
+            }
+        }
+        System.out.println("Span of the given array is "+ (max-min));
+    }
+    public static void secondMax_approach1(int[]arr,int currentSize) {
+        int max=arr[0],secondMax=0;
+        for (int i = 0; i < currentSize; i++) {
+            if(arr[i]>=max){
+                max=arr[i];
+            }
+        }
+        for (int i = 0; i < currentSize; i++) {
+            if(arr[i]>=secondMax && arr[i]<max){
+                secondMax=arr[i];
+            }
+        }
+        System.out.println("Second Max of the given array is "+secondMax);
+    }
 }
