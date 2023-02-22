@@ -546,3 +546,29 @@ Create following function of Array :-
 1. Search
 2. Update
 3. Find second max
+#################### Class 23 (22/02/2023) ##################
+approach : Two pointer approach
+--Arrays{
+        --problem 5{
+                statement : Reverse an array
+                approach : Two pointer approach
+        }
+        --problem 6{
+                statement : pair sum / two sum (LC:1)
+                i/p : arr = {2,1,5,6,3,7}, k =11
+                o/p : 2,3
+                pair is 5 and 6 
+
+        }
+}
+##### HW #####
+1.Array is sorted or not {
+        i/p : arr = {1,2,3,4,5}
+        o/p : true;
+}
+2.Remove Repeated element (Leet Code - 26)
+3.Find the Leader element{
+        statement : if right side of element does not have any greater element then he is the leader element
+        i/p : arr[] = {5,9,8,6,7,4}
+        o/p : 4,7,8,9
+}
