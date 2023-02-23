@@ -11,8 +11,7 @@ public class Class23 {
         pairSum_approach1(arr2, 11);
         pairSum_approach2(arr2, 11);
          
-        boolean isArraySorted = HomeworkOfClass23.isArraySorted(arr2);
-        System.out.print("is given array "+" sorted : "+ isArraySorted);
+        
     }
     public static void printArr(int []arr){
         for (int i = 0; i < arr.length; i++) {
@@ -53,13 +52,4 @@ public class Class23 {
         
     }
 }
-class HomeworkOfClass23{
-    public static boolean isArraySorted(int[]arr) {
-        for (int i = 0; i < arr.length-1; i++) {
-            if (arr[i]<arr[i+1]) {
-                return true;
-            }
-        }
-        return false;
-    }
-}
+
