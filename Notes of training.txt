@@ -572,3 +572,31 @@ approach : Two pointer approach
         i/p : arr[] = {5,9,8,6,7,4}
         o/p : 4,7,8,9
 }
+#################### Class 24 (24/02/2023) ##################
+--Array{
+        --problem 7{
+                statement : Rotate an array by one
+                i/p : arr[] = {3,5,1,7,5,9}
+                o/p : {5,1,7,5,9,3}
+        }
+        --problem 8{ 
+                statement : Rotate na array to the right by k
+                i/p : nums = {1,2,3,4,5,6,7}, k =3
+                o/p : {5,6,7,1,2,3,4}
+                basic approach : rotate the aray by 1 by k times
+                optimize approach : call the reverse function from 0 to n-k-1 then again call the reverse from n-k to n-1 then again call reverse from 0 to n-1 (use two pointer approach in reverse function)
+        }
+        --problem 9{
+                statement : Addition of two array
+                i/p :arr1 = {3,4,5,6,7} arr2 = {2,3,4,5}
+                o/p : {3,6,9,1,2}
+        }
+        --problem 10{
+                statement : subtraction of two array 
+                i/p : arr1 = {1,2,3,4}, arr2 = {5,6,7,8}
+                o/p : {6,9,1,2}
+        }
+}
+##### HW #####
+--problem 8
+--problem 10
