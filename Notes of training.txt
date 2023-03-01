@@ -600,3 +600,53 @@ approach : Two pointer approach
 ##### HW #####
 --problem 8
 --problem 10
+#################### Class 25 (01/03/2023) ##################
+Array{
+        --problem 11{
+                statement: Sort 0 and 1
+                i/p : arr = {0,1,0,0,1,1,0,0,0,1,1}
+                o/p : {0,0,0,0,0,0,1,1,1,1,1}
+        }
+        --problem 12{
+                Name: DNF - Dutch National Flag / Sort Colors (Leetcode - 75)
+                statement: Sort 0, 1 and 2
+                i/p : arr = {0,1,1,1,0,0,2,2,1,0,1,0,2,2}
+                o/p : {0,0,0,0,0,1,1,1,1,1,2,2,2,2}
+        }
+        --problem 13{
+                statement: Running Sum of 1D Array (Leetcode - 1480)
+        }
+        --problem 14{
+                statement: Odd element
+                i/p : arr = {1,1,2,2,3,3,4,5,5,6,6};
+                o/p : 4
+        }
+        --problem 15{
+                statement: Missing Number
+                i/p: arr = {1,2,3,5,6}
+                o/p : 4
+                approach: Using XOR
+        }
+        --problem 16{
+                statement: Buy and Sell Stock ( Leetcode - 121)
+                i/p: prices = [7,1,5,3,6,4]
+                o/p: 5, diff b/w 1 and 6
+                
+                i/p: prices = [3,5,8,9,2,6]
+                o/p: 6, diff b/w 3 and 9
+
+                approach: Prefix - Min, Max, Sum , Suffix - Min, Max, Sum
+        }
+        --problem 17{
+                statement: Majority element ( Leetcode-169 )
+                i/p: nums = [2,2,1,1,1,2,2]
+                o/p: 2
+        }
+}
+##### HW #####
+--problelm 11
+--problelm 12
+--problelm 13
+--problelm 14
+--problelm 15
+--problelm 17
