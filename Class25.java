@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class Class25 {
     public static void main(String[] args) {
@@ -21,6 +22,8 @@ public class Class25 {
 
         int [] arr4 = {2,2,1,1,1,2,2};
         System.out.println(HomeworkOfClass25.majorityElement_approach_1(arr4));
+        System.out.println(HomeworkOfClass25.majorityElement_approach_2(arr4));
+        System.out.println(HomeworkOfClass25.majorityElement_approach_3(arr4));
 
         int [] arr5 = {1,1,2,2,3,3,4,4,5,5,6,6,7};
         System.out.println(HomeworkOfClass25.oddElement(arr5));
@@ -126,14 +129,63 @@ class HomeworkOfClass25{
             }
         }
         int max = 0;
-        for (int i = 0; i < arr.length; i++) {
-            Integer el = map.get(arr[i]);
-            if(el > arr.length/2 ){
-                max = arr[i];
+        // Not an optimized method
+        // for (int i = 0; i < arr.length; i++) {
+        //     Integer el = map.get(arr[i]);
+        //     if(el > arr.length/2 ){
+        //         max = arr[i];
+        //     }
+        // }
+
+        // Optimized Method
+        for (Map.Entry<Integer,Integer> entry : map.entrySet()) {
+            if(entry.getValue()>arr.length/2){
+                max=entry.getKey();
             }
         }
         return max;
     }
+    public static int majorityElement_approach_2(int [] arr) {
+        int max =-1;
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i]==arr[j]) {
+                    count++;
+                }
+                if(count>arr.length/2){
+                    max = arr[i];
+                    return max;
+                }
+            }
+            count=0;
+        }
+        return max;
+    }
+    
+    public static int majorityElement_approach_3(int arr[]) {
+        int majority=0;
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if(count==0){
+                majority=arr[i];
+            }
+            if (majority==arr[i]) {
+                count++;
+            }
+            else{
+                count--;
+            }
+        }
+        count =0;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]==majority){
+                count++;
+            }
+        }
+        return count > arr.length/2 ? majority : -1;
+    }
+
     public static int oddElement(int [] arr) {
         int oddElement = arr[0];
         for (int i = 1; i < arr.length; i++) {

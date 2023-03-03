@@ -641,6 +641,7 @@ Array{
                 statement: Majority element ( Leetcode-169 )
                 i/p: nums = [2,2,1,1,1,2,2]
                 o/p: 2
+                optimie_Approach : Boyre Moore Algo
         }
 }
 ##### HW #####
@@ -650,3 +651,19 @@ Array{
 --problelm 14
 --problelm 15
 --problelm 17
+
+#################### Class 26 (03/03/2023) ##################
+--Array{
+        --problem 18{
+                statement: Trapping Rain Water (LeetCode : 42)
+                i/p: arr = {2,0,3,4,5,2,5}
+                o/p: 5
+        }
+        --problelm 19 {
+                statement: Gas Station (LeetCode: 134)
+                i/p: int cost = {3,4,5,1,2}, gas = {1,2,3,4,5} 
+                o/p: 3
+        }
+}
+##### HW #####
+--problem 19
