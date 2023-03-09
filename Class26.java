@@ -1,7 +1,13 @@
+import java.util.ArrayList;
+
 public class Class26 {
     public static void main(String[] args) {
         int arr[] = {2,0,3,4,5,2,5};
         System.out.println(trappingRainWater_approach_1(arr));
+        int cost [] = {3,4,5,1,2};
+        int [] gas = {1,2,3,4,5};
+        HomeworkOfClass26.gasStation_approach_1(cost, gas);
+        HomeworkOfClass26.gasStation_approach_2(cost, gas);
     }
     public static int trappingRainWater_approach_1(int arr[]) {
         int waterQuantity = 0 ; 
@@ -20,5 +26,53 @@ public class Class26 {
             }
         }
         return waterQuantity;
+    }
+}
+
+class HomeworkOfClass26{
+    public static void gasStation_approach_1(int []cost,int []gas) {
+        int car_gas;
+        for (int i = 0; i < gas.length; i++) {
+            int ind = i;
+            car_gas = 0;
+            for (int j = ind; j < gas.length + ind; j++) {
+                // System.out.println(i%gas.length);
+                car_gas += gas[j%gas.length];
+                car_gas -= cost[j%gas.length];
+                if (car_gas<0) {
+                    break;
+                }
+            }
+            System.out.println(car_gas);
+            if (car_gas>=0) {
+                System.out.println(i);
+            }
+        }
+
+    }
+    public static void gasStation_approach_2(int []cost,int[]gas) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        for (int i = 0; i < gas.length; i++) {
+            if (gas[i]>cost[i] || gas.length >0 && gas.length <3) {
+                arr.add(i);
+            }
+        }
+        int car_gas ;
+        for (int i :arr) {
+            int ind = i;
+            car_gas = 0;
+            for (int j = ind; j < gas.length + ind; j++) {
+                // System.out.println(i%gas.length);
+                car_gas += gas[j%gas.length];
+                car_gas -= cost[j%gas.length];
+                if (car_gas<0) {
+                    break;
+                }
+            }
+            System.out.println(car_gas);
+            if (car_gas>=0) {
+                System.out.println(i);
+            }
+        }
     }
 }
