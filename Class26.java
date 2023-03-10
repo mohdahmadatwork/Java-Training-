@@ -8,6 +8,7 @@ public class Class26 {
         int [] gas = {1,2,3,4,5};
         HomeworkOfClass26.gasStation_approach_1(cost, gas);
         HomeworkOfClass26.gasStation_approach_2(cost, gas);
+        HomeworkOfClass26.gasStation_approach_3(cost, gas);
     }
     public static int trappingRainWater_approach_1(int arr[]) {
         int waterQuantity = 0 ; 
@@ -43,7 +44,7 @@ class HomeworkOfClass26{
                     break;
                 }
             }
-            System.out.println(car_gas);
+            // System.out.println(car_gas);
             if (car_gas>=0) {
                 System.out.println(i);
             }
@@ -69,10 +70,25 @@ class HomeworkOfClass26{
                     break;
                 }
             }
-            System.out.println(car_gas);
+            // System.out.println(car_gas);
             if (car_gas>=0) {
                 System.out.println(i);
             }
         }
+    }
+    public static void gasStation_approach_3(int []cost,int []gas) {
+        int  rem = 0 ;
+        int startingPoint = 0;
+        int loss =0;
+        for (int i = 0; i < cost.length; i++) {
+            rem +=gas[i]-cost[i];
+            if (rem<0) {
+                startingPoint = i+1;
+                loss += rem;
+                rem = 0;
+            }
+        }
+        int res = loss + rem >= 0 ? startingPoint : -1;
+        System.out.println(res);
     }
 }

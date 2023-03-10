@@ -667,3 +667,54 @@ Array{
 }
 ##### HW #####
 --problem 19
+
+#################### Class 27 (10/03/2023) ##################
+--Array{
+        --problemm 20{
+                statement: Frequency in sorted Array;
+                i/p: {10,10,10,25}
+                o/p: 10 3, 25 1
+        }
+        --problem 21{
+                statement: Arrange positive and negative numbers
+                note: can be arranges in any orders means you only have to make negative inleft side and positive in right side they don,t have to sort
+
+        }
+        --problem 22{
+                statement: Numbers Smaller than current number - HW
+                i/p: [8,1,4,3,5]
+                o/p: [4,0,2,1,3]
+        }
+}
+--Binary Search{
+        --concept{
+                --start searching from middle of array
+                --Compare search element with middle element
+                --if search element found at mid then return otherwise
+                --we search if element is greater than the middle element
+                --then search element can be found either in left half or right half
+        }
+        --problem 23{
+                statement: Find the nearest lowest and nearest greater value in sorted array
+                i/p: arr[] = {12,15,20,25,40,45,50,55,58,70}
+        }
+        --problem 24{
+                statement: Find First and Last index of element in sorted array 
+        }
+        --problem 25{
+                statement: Peek Element (LeetCode: 162)
+        }
+        --problem 26{
+                statement: Sub Array Sum / find Maximum sum of k consecutive elements
+                define: given an array on size N and also one integer K. We have to print sum of every subaraay of size k 
+                i/p: arr[] = {1,40,30,10,20,5}
+                o/p: 80
+        }
+}
+##### HW #####
+--problem 20
+--problem 21
+--problem 22
+--problem 23
+--problem 25
+--problem 26
